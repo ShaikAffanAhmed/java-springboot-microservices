@@ -1,0 +1,32 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Footer Template</title>
+</head>
+<body>
+
+<footer id="fragmentTag" th:fragment="footer1(title,subtitle)">
+	<div class="container">
+		
+		<h1 th:text="${title}"></h1>
+		<h1 th:text="${subtitle}"></h1>
+		<h1> About Learn Coding</h1>
+		<h1> Provide Good Content about programming</h1>
+		<h1> Feel Free to contact and work with me</h1>
+		
+<!--
+	 th:replace - It will actually substitute the host tag [tag where we use replace] by the fragment's.
+     That means,It will remove the host tag & in place of host tag, It will add the specified fragment including the fragment tag.
+ 
+     th:insert - It will simply insert the specified fragment as the body of its host tag including the fragment tag.
+ 
+     th:include - It will also insert the specified fragment as the body of its host tag but excluding the fragment tag.
+    
+ -->
+
+	</div>
+</footer>
+ 
+</body>
+
+</html>

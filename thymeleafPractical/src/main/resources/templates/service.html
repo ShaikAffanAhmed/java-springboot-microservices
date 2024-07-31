@@ -1,0 +1,15 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Services Page</title>
+</head>
+<body>
+   <h1>This services are from include fragment code</h1>
+   <!-- Going to bring footer here-->
+   
+   <footer id="hostTag" th:replace="footer::footer1(${title},${subtitle})">
+	   
+   </footer>
+</body>
+
+</html>
